@@ -5,6 +5,205 @@
   box-sizing: border-box;
 }
 
+html {
+  font-family: sans-serif;
+  font-size: 100%;
+}
+
 img {
   max-width: 100%;
+}
+
+/* COMMON*/
+/* Layout */
+.container {
+  width: 80%;
+  max-width: 1036px;
+  margin: 0 auto;
+}
+
+/* CARD ELEMENT */
+.cards-list {
+  list-style: none;
+  margin-top: 2rem;
+}
+
+.card {
+  position: relative;
+}
+
+.card-inner {
+  display: flex;
+  min-height: 270px;
+}
+
+.card-left,
+.card-right {
+  width: 50%;
+  position: relative;
+  display: flex;
+}
+
+.card-left img,
+.card-right img {
+  position: relative;
+  height: 100%;
+  width: calc(100% - 20px);
+  z-index: -1;
+  object-fit: cover;
+}
+
+.card-left {
+  background-color: rgba(90, 170, 240, 0.6);
+  justify-content: flex-end;
+  border-bottom-left-radius: 20px;
+}
+
+.card-right {
+  background-color: rgba(0, 180, 110, 0.6);
+  justify-content: flex-start;
+  border-bottom-right-radius: 20px;
+}
+
+/* Card text grid */
+.card-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  width: calc(100% - 20px * 2);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+}
+
+.card-text-top {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.game-type {
+  background-color: #ff4b5a;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 0.3rem 1rem 0.6rem;
+  border-radius: 0 0 5px 5px;
+}
+
+.card-text-teams {
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+}
+
+.team-logo {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+}
+
+.team-logo img {
+  height: 120px;
+  width: auto;
+}
+
+.team-logo-label {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-weight: 600;
+  line-height: 1.2rem;
+  text-transform: uppercase;
+  color: white;
+}
+
+.team-logo-label p {
+  font-size: 1.2rem;
+}
+
+.team-info {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  padding: 0 0.5rem;
+  margin-top: 20px;
+}
+
+.team-info.left {
+  justify-content: flex-end;
+}
+
+.team-info.right {
+  justify-content: flex-start;
+}
+
+.team-score {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 90px;
+  background-color: white;
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.team-info.left .team-score {
+  border-bottom-left-radius: 10px;
+  margin-left: 20px;
+}
+
+.team-info.right .team-score {
+  border-bottom-right-radius: 10px;
+  margin-right: 20px;
+}
+
+.team-name {
+  color: white;
+  font-weight: 800;
+  text-transform: uppercase;
+  align-self: flex-end;
+  padding-bottom: 10px;
+}
+
+.team-info.left .team-name {
+  text-align: right;
+}
+
+.team-name .small {
+  font-size: 1.5rem;
+}
+
+.team-name .large {
+  font-size: 2rem;
+}
+
+.card-text-stadium {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.card-text-footer {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 15px;
+}
+
+.card-text-footer img {
+  max-height: 50px;
 }
