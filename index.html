@@ -4,6 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <!-- Custom styles -->
     <link rel="stylesheet" href="css/style.css" />
 
@@ -11,13 +22,17 @@
   </head>
   <body>
     <main>
-      <section class="container">
-        <!-- Card element -->
+      <section class="container matches">
+        <h3 class="matches-date">SUN 30 OCT</h3>
         <ul class="cards-list">
+          <!-- Card element -->
           <li class="card">
             <div class="card-inner">
               <!-- Left side of card -->
-              <div class="card-left">
+              <div
+                class="card-left"
+                style="background-color: rgba(90, 170, 240, 0.6)"
+              >
                 <img src="assets/img/blue-background-1.png" alt="" />
               </div>
               <!-- Left side of card -->
@@ -26,7 +41,7 @@
               <div class="card-text">
                 <div class="card-text-top">
                   <div class="game-type">
-                    <span>Full time</span>
+                    <span class="font-secondary">Full time</span>
                   </div>
                 </div>
                 <div class="card-text-teams">
@@ -71,7 +86,7 @@
                   </div>
                 </div>
                 <div class="card-text-stadium">
-                  <p>scoutstoun stadium</p>
+                  <p class="font-secondary">scoutstoun stadium</p>
                 </div>
                 <div class="card-text-footer">
                   <img src="assets/img/united-rugby-copy.png" alt="" />
@@ -80,7 +95,10 @@
               <!-- /Card text -->
 
               <!-- Right side of the card -->
-              <div class="card-right">
+              <div
+                class="card-right"
+                style="background-color: rgba(0, 180, 110, 0.6)"
+              >
                 <img src="assets/img/green-background-1.png" alt="" />
               </div>
               <!-- /Right side of the card -->
@@ -90,5 +108,7 @@
         <!-- /Card element -->
       </section>
     </main>
+
+    <script type="module" src="js/script.js"></script>
   </body>
 </html>

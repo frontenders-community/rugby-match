@@ -6,7 +6,7 @@
 }
 
 html {
-  font-family: sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 100%;
 }
 
@@ -20,6 +20,23 @@ img {
   width: 80%;
   max-width: 1036px;
   margin: 0 auto;
+}
+
+/* Typography */
+.font-secondary {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* MATCHES SECTION */
+.matches {
+  padding-bottom: 2rem;
+}
+
+.matches-date {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 500;
 }
 
 /* CARD ELEMENT */
@@ -55,13 +72,11 @@ img {
 }
 
 .card-left {
-  background-color: rgba(90, 170, 240, 0.6);
   justify-content: flex-end;
   border-bottom-left-radius: 20px;
 }
 
 .card-right {
-  background-color: rgba(0, 180, 110, 0.6);
   justify-content: flex-start;
   border-bottom-right-radius: 20px;
 }
@@ -84,6 +99,7 @@ img {
   content: "";
   position: absolute;
   inset: 0;
+  z-index: -1;
   background: linear-gradient(
     90deg,
     rgba(0, 0, 0, 0.4) 2.5%,
