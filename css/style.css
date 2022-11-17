@@ -28,7 +28,7 @@ img {
 }
 
 /* MATCHES SECTION */
-.matches {
+.matches-group {
   padding-bottom: 2rem;
 }
 
@@ -42,12 +42,13 @@ img {
 /* CARD ELEMENT */
 .cards-list {
   list-style: none;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 }
 
 .card {
   position: relative;
   cursor: pointer;
+  margin-bottom: 2rem;
 }
 
 .card-inner {
