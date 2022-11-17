@@ -131,6 +131,7 @@ img {
   border-radius: 0 0 5px 5px;
 }
 
+/* Card text teams info */
 .card-text-teams {
   min-height: 110px;
   display: flex;
@@ -235,6 +236,10 @@ img {
   font-size: 1.6rem;
 }
 
+.team-name-content {
+  line-height: 1;
+}
+
 .card:hover .team-info.left .team-name {
   transform: translateX(-0.5rem);
 }
@@ -243,6 +248,7 @@ img {
   transform: translateX(0.5rem);
 }
 
+/* Card text stadium info */
 .card-text-stadium {
   display: flex;
   justify-content: center;
@@ -252,6 +258,7 @@ img {
   text-transform: uppercase;
 }
 
+/* Card text footer */
 .card-text-footer {
   display: flex;
   justify-content: center;
@@ -264,9 +271,15 @@ img {
 
 @media screen and (max-width: 1024px) {
   html {
-    font-size: 62.5%;
+    font-size: 75%;
   }
 
+  /* Card text */
+  .card-text-top {
+    padding-bottom: 2rem;
+  }
+
+  /* Card text teams info */
   .team-logo {
     width: 20%;
     min-width: 55px;
@@ -274,10 +287,6 @@ img {
 
   .team-info {
     width: 30%;
-  }
-
-  .card-text-top {
-    padding-bottom: 2rem;
   }
 
   .team-logo {
@@ -292,7 +301,7 @@ img {
   }
 
   .team-score {
-    width: 6rem;
+    width: 5rem;
     height: 7rem;
     font-size: 4rem;
     margin-bottom: 1rem;
@@ -328,6 +337,7 @@ img {
     justify-content: flex-end;
   }
 
+  /* Team logo for mobile */
   .team-info.left .team-logo-label-mobile {
     justify-content: flex-end;
   }
@@ -344,11 +354,13 @@ img {
     display: flex;
   }
 
+  /* Card text stadium info */
   .card-text-stadium {
     margin-top: 2.5rem;
     margin-bottom: 1rem;
   }
 
+  /* Card text footer */
   .card-text-footer img {
     max-height: 40px;
   }
