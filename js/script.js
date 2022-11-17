@@ -96,12 +96,12 @@ function createMatchCard({ place, teams, type }) {
                             ${
                               secondTeam.name.split(" ").length > 1
                                 ? `<div class="small">${
-                                    firstTeam.name.split(" ")[0]
+                                    secondTeam.name.split(" ")[0]
                                   }</div><div class="large">${
-                                    firstTeam.name.split(" ")[1]
+                                    secondTeam.name.split(" ")[1]
                                   }</div>`
                                 : `<div class="large">${
-                                    firstTeam.name.split(" ")[0]
+                                    secondTeam.name.split(" ")[0]
                                   }</div>`
                             }
                         </div>

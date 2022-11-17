@@ -302,15 +302,15 @@ img {
 
   .team-score {
     width: 5rem;
-    height: 7rem;
+    height: 6rem;
     font-size: 4rem;
-    margin-bottom: 1rem;
   }
 
   .team-info {
     height: 100%;
     justify-content: space-between;
     margin-top: 0;
+    margin-bottom: 1rem;
   }
 
   .team-info.left {
@@ -356,7 +356,6 @@ img {
 
   /* Card text stadium info */
   .card-text-stadium {
-    margin-top: 2.5rem;
     margin-bottom: 1rem;
   }
 
