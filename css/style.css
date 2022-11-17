@@ -30,6 +30,7 @@ img {
 
 .card {
   position: relative;
+  cursor: pointer;
 }
 
 .card-inner {
@@ -114,6 +115,11 @@ img {
 .team-logo img {
   height: 120px;
   width: auto;
+  transition: all 0.3s ease-out;
+}
+
+.card:hover .team-logo img {
+  transform: scale(1.05);
 }
 
 .team-logo-label-mobile {
@@ -180,6 +186,7 @@ img {
   text-transform: uppercase;
   align-self: flex-end;
   padding-bottom: 10px;
+  transition: all 0.3s ease-out;
 }
 
 .team-info.left .team-name {
@@ -192,6 +199,14 @@ img {
 
 .team-name .large {
   font-size: 1.6rem;
+}
+
+.card:hover .team-info.left .team-name {
+  transform: translateX(-0.5rem);
+}
+
+.card:hover .team-info.right .team-name {
+  transform: translateX(0.5rem);
 }
 
 .card-text-stadium {
