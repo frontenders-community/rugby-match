@@ -80,6 +80,23 @@ img {
   z-index: 100;
 }
 
+.card-text::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.4) 2.5%,
+    transparent 15%,
+    transparent 35%,
+    rgba(0, 0, 0, 0.4) 48%,
+    rgba(0, 0, 0, 0.4) 52%,
+    transparent 64%,
+    transparent 85%,
+    rgba(0, 0, 0, 0.4) 97.5%
+  );
+}
+
 .card-text-top {
   padding-bottom: 10px;
   display: flex;
