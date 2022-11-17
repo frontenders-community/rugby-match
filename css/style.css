@@ -80,7 +80,7 @@ img {
 }
 
 .card-text-top {
-  margin-bottom: 10px;
+  padding-bottom: 10px;
   display: flex;
   justify-content: center;
 }
@@ -97,7 +97,7 @@ img {
 }
 
 .card-text-teams {
-  min-height: 120px;
+  min-height: 110px;
   display: flex;
   align-items: center;
 }
@@ -108,11 +108,16 @@ img {
   justify-content: center;
   align-items: center;
   width: 15%;
+  flex-shrink: 0;
 }
 
 .team-logo img {
   height: 120px;
   width: auto;
+}
+
+.team-logo-label-mobile {
+  display: none;
 }
 
 .team-logo-label {
@@ -152,10 +157,10 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 70px;
-  height: 90px;
+  width: 4.375rem;
+  height: 5.625rem;
   background-color: white;
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 800;
 }
 
@@ -182,11 +187,11 @@ img {
 }
 
 .team-name .small {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .team-name .large {
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 
 .card-text-stadium {
@@ -206,4 +211,96 @@ img {
 
 .card-text-footer img {
   max-height: 50px;
+}
+
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  .team-logo {
+    width: 20%;
+    min-width: 55px;
+  }
+
+  .team-info {
+    width: 30%;
+  }
+
+  .card-text-top {
+    padding-bottom: 2rem;
+  }
+
+  .team-logo {
+    height: 100%;
+    align-items: flex-start;
+    padding-top: 3rem;
+  }
+
+  .team-logo img {
+    width: 55px;
+    height: 55px;
+  }
+
+  .team-score {
+    width: 6rem;
+    height: 7rem;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+
+  .team-info {
+    height: 100%;
+    justify-content: space-between;
+    margin-top: 0;
+  }
+
+  .team-info.left {
+    flex-direction: column-reverse;
+    align-items: flex-end;
+  }
+
+  .team-info.right {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .team-name {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding-bottom: 0;
+  }
+
+  .team-name-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .team-info.left .team-logo-label-mobile {
+    justify-content: flex-end;
+  }
+
+  .team-info.right .team-name {
+    align-self: flex-start;
+  }
+
+  .team-logo-label {
+    display: none;
+  }
+
+  .team-logo-label-mobile {
+    display: flex;
+  }
+
+  .card-text-stadium {
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .card-text-footer img {
+    max-height: 40px;
+  }
 }
